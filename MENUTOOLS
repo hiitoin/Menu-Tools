@@ -1,0 +1,85 @@
+@echo off
+color a
+:pass
+cls
+set /p pass="Put The Pass>"
+if /I %pass%== hiitoin (
+cls
+goto A
+)
+
+echo That is wang click enter to try agine
+pause > nul
+goto pass
+
+
+
+:A
+cls
+color f
+set error=-
+echo [31m##     ## ######## ##    ## ##     ##    ########  #######   #######  ##        ######  [0m
+echo [31m###   ### ##       ###   ## ##     ##       ##    ##     ## ##     ## ##       ##    ## [0m
+echo [31m#### #### ##       ####  ## ##     ##       ##    ##     ## ##     ## ##       ##       [0m
+echo [31m## ### ## ######   ## ## ## ##     ##       ##    ##     ## ##     ## ##        ######  [0m
+echo [31m##     ## ##       ##  #### ##     ##       ##    ##     ## ##     ## ##             ##  [0m
+echo [31m##     ## ##       ##   ### ##     ##       ##    ##     ## ##     ## ##       ##    ## [0m
+echo [31m##     ## ######## ##    ##  #######        ##     #######   #######  ########  ######  [0m
+echo.
+echo [36m:command:[0m
+echo [36m1.Ip Snifer[0m
+echo [36m2.open godmode[0m
+echo [36m3.locate[0m
+echo [36m4.Myip[0m
+echo [36m5.websites[0m
+echo.
+echo.
+set /p A="/[32m%username%[0m>"
+
+if /I %A%== 1 (
+cls
+goto Ip
+)
+if /I %A%== 2 (
+start C:\Users\JellyAiden\Desktop\fiberhacks.{ED7BA470-8E54-465E-825C-99712043E01C}
+goto A
+)
+if /I %A%== 3 (
+goto lo
+)
+if /I %A%== 4 (
+color A
+ipconfig
+ipconfig /all
+color f
+pause > nul
+goto A
+)
+if /I %A%== 5 (
+goto web
+)
+
+echo I did not make this
+pause > nul
+goto A
+
+:Ip
+color a
+set /p Ip="what Ip do you wan't to snife?>"
+ping %Ip%
+nslookup %Ip%
+pause > nul
+Ip=-
+goto A
+:web 
+set /p web="What Website do you wan't to go to?>"
+start www.%web%.com
+goto A
+:lo
+color b
+echo What do you wan't to locate?
+set /p Lo="Put Ip>"
+color A
+ping %Lo% -t
+pause >nul
+goto A
