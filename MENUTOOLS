@@ -2,8 +2,9 @@
 color a
 :pass
 cls
+echo The pass is 1234
 set /p pass="Put The Pass>"
-if /I %pass%== hiitoin (
+if /I %pass%== 1234 (
 cls
 goto A
 )
